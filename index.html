@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VIT Bhopal VTOP — Clone</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <button class="hamburger" id="menuBtn">☰</button>
+    <div class="brand">VIT <span>(Bhopal Campus)</span></div>
+    <div class="top-actions">
+      <button title="Home">⌂</button>
+      <button title="Print">▣</button>
+      <button title="Favorites">☆</button>
+      <button class="quick">Quick Links ▾</button>
+    </div>
+    <div class="session">Session Time : <span id="sessionTime">19m 40s</span></div>
+    <div class="user">
+      <div class="avatar">M</div>
+      <span>23BSA10163 (STUDENT)</span> ▾
+    </div>
+  </header>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="side-title">VTOP Menu <button id="closeBtn">☰</button></div>
+    <nav>
+      <a href="#" data-page="home"><span>▣</span> Contact Us</a>
+      <a href="#" class="menu-parent" data-page="myinfo"><span>▣</span><b>My Info</b><span class="arrow">⌄</span></a>
+      <div class="submenu" id="myInfoSub">
+        <a href="#" data-page="myinfo">Student Information</a>
+        <a href="#" data-page="myinfo" data-hostel="true">Hostel Information</a>
+      </div>
+      <a href="#" data-page="home"><span>●</span> Info Corner <span class="arrow">⌄</span></a>
+      <a href="#" data-page="home"><span>♣</span> Proctor <span class="arrow">⌄</span></a>
+      <a href="#" data-page="home"><span>🎓</span> Academics <span class="arrow">⌄</span></a>
+      <a href="#" data-page="home"><span>▥</span> Research <span class="arrow">⌄</span></a>
+      <a href="#" data-page="home"><span>▱</span> Examination <span class="arrow">⌄</span></a>
+      <a href="#" data-page="home"><span>➤</span> Services <span class="arrow">⌄</span></a>
+      <a href="#" data-page="home"><span>✹</span> Bonafide <span class="arrow">⌄</span></a>
+      <a href="#" data-page="home"><span>▣</span> Online Payments <span class="arrow">⌄</span></a>
+      <a href="#" data-page="home"><span>⌂</span> Hostels <span class="arrow">⌄</span></a>
+      <a href="#" data-page="home"><span>♜</span> SW Events <span class="arrow">⌄</span></a>
+      <a href="#" data-page="home"><span>⚓</span> ECA Club Registration <span class="arrow">⌄</span></a>
+      <a href="#" data-page="home"><span>♟</span> My Account <span class="arrow">⌄</span></a>
+    </nav>
+  </aside>
+
+  <div class="overlay" id="overlay"></div>
+
+  <main class="content">
+    <section id="homePage" class="page active">
+      <div class="dashboard-grid">
+        <div>
+          <div class="panel">
+            <div class="panel-heading">CURRENT SEMESTER COURSE REGISTRATION DETAILS <span>FALLSEM2026-27</span></div>
+            <div class="course-head">
+              <b>#</b><b>Code - Course Name</b><b>Type</b><b>Attendance</b><b>Remarks</b>
+            </div>
+            <div class="empty-course">No course information available</div>
+          </div>
+
+          <div class="spotlight">
+            <div class="section-line"></div>
+            <h2>SPOT-LIGHT</h2>
+            <div class="spot-card">
+              <div class="tag">Academics <i>1</i></div>
+              <div class="spot-item">ϟ &nbsp; Fall Semester TEE Feedback Link (FT)</div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="panel small-panel">
+            <div class="panel-heading">PROCTOR Message</div>
+            <div class="blank"></div>
+          </div>
+          <div class="panel small-panel">
+            <div class="panel-heading">CGPA and CREDIT STATUS</div>
+            <div class="status-row"><span>Total Credits Required :</span><b>189</b></div>
+            <div class="status-row"><span>Earned Credits :</span><b>48.0</b></div>
+            <div class="status-row"><span>Current CGPA :</span><b>2.1</b></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="myInfoPage" class="page">
+      <div class="student-summary">
+        <div class="photo">MP</div>
+        <div class="student-name">MALHAR MAHESH PATIL</div>
+        <div class="summary-details">
+          <p><label>REGISTER NUMBER:</label> 23BSA10163</p>
+          <p><label>PROGRAM &amp; BRANCH:</label></p>
+          <p>BTECH - Computer Science and Engineering (Cloud Computing and Automation)</p>
+        </div>
+        <div class="summary-details right">
+          <p><label>VIT EMAIL:</label> malhar.23bsa10163@vitbhopal.ac.in</p>
+          <p><label>SCHOOL NAME:</label> School of Computing Science and Engineering</p>
+        </div>
+      </div>
+
+      <div class="accordion">
+        <button class="accordion-head"><span class="yellow-icon">▣</span> PERSONAL INFORMATION <span>⌃</span></button>
+        <div class="accordion-body"></div>
+
+        <button class="accordion-head"><span class="yellow-icon">🎓</span> EDUCATIONAL INFORMATION <span>⌃</span></button>
+        <div class="accordion-body"></div>
+
+        <button class="accordion-head"><span class="yellow-icon">♣</span> FAMILY INFORMATION <span>⌃</span></button>
+        <div class="accordion-body"></div>
+
+        <button class="accordion-head"><span class="yellow-icon">◉</span> PROCTOR INFORMATION <span>⌃</span></button>
+        <div class="accordion-body"></div>
+
+        <button class="accordion-head hostel-head"><span class="yellow-icon">⌂</span> HOSTEL INFORMATION <span>⌃</span></button>
+        <div class="accordion-body hostel-body">
+          <div class="no-hostel">No hostel information available</div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
